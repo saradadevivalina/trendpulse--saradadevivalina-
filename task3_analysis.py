@@ -4,7 +4,7 @@ from datetime import datetime
 import numpy as np
 
 data_dir = 'data' # Define the path to the data directory
-csv_filepath = 'C:/Users/valin/Desktop/data/trends_clean.csv' # filepathh
+csv_filepath = '/content/data/trends_clean.csv' # filepathh
 csv_file = csv_filepath
 
 # check if filepath exists
@@ -72,7 +72,7 @@ print(f"Added 'is_popular' column based on average score ({average_score:.2f})."
 print("\nDataFrame with new 'engagement' and 'is_popular' columns:")
 print(df.head())
 
-data_dir = 'C:/Users/valin/Desktop/data' # Define the output directory
+data_dir = 'data' # Define the output directory
 
 if not os.path.exists(data_dir): # Ensure the data directory exists
     os.makedirs(data_dir)
