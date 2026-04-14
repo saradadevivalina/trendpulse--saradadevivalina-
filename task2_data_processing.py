@@ -79,7 +79,7 @@ data_dir = 'C:/Users/valin/Desktop/data' # Define the output directory
 
 # Generate a dated filename for the CSV
 datestamp = datetime.now().strftime('%Y%m%d_%H%M%S')
-output_csv_filename = os.path.join(data_dir, f'data/trends_clean.csv')
+output_csv_filename = os.path.join(data_dir, f'trends_clean.csv')
 
 try:
     df.to_csv(output_csv_filename, index=False)
