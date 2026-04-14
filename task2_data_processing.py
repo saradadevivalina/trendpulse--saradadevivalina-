@@ -4,7 +4,7 @@ import pandas as pd
 from datetime import datetime
 
 data_dir = 'data' # Define the path to the data directory
-json_filename = 'C:/Users/valin/Desktop/data/trends_20260408_235550.json'
+json_filename = '/content/data/trends_20260414_093046.json'
 json_filepath = json_filename
 
 # check if filepath exists
@@ -75,7 +75,7 @@ df.info()
 print("\nFirst 5 rows of the cleaned DataFrame:")
 display(df.head())
 
-data_dir = 'C:/Users/valin/Desktop/data' # Define the output directory
+data_dir = 'data' # Define the output directory
 
 # Generate a dated filename for the CSV
 datestamp = datetime.now().strftime('%Y%m%d_%H%M%S')
